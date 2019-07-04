@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user_new_account"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginLeft="-30dp"
+        android:id="@+id/bg"
+        android:layout_width="454dp"
+        android:layout_height="240dp"
+        app:srcCompat="@drawable/bg"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:text="Create New Account"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/enname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textSize="25sp"
+        android:layout_marginRight="60dp"/>
+    <EditText
+        android:id="@+id/enage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:textSize="25sp"
+        android:layout_marginRight="60dp"/>
+
+
+    <EditText
+        android:id="@+id/enemail2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textSize="25sp"
+        android:layout_marginRight="60dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textSize="25sp"
+        android:layout_marginRight="60dp"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/confirmp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confrim Password"
+        android:textSize="25sp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textSize="25sp"
+        android:layout_marginRight="30dp"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textSize="25sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textSize="25sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="150dp"
+        android:layout_marginTop="40dp"
+        android:background="#80A4FF"
+        android:text="Submit"
+        android:onClick="Profile"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user_profile"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:text="My Profile"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/editprofile"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="290dp"
+        android:text="Edit Profile"
+        android:textSize="20sp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/userimg"
+        android:layout_width="105dp"
+        android:layout_height="74dp"
+        app:srcCompat="@drawable/user"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="60dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ram Bahadur"
+        android:textSize="30sp"
+        />
+
+    <TextView
+        android:id="@+id/email1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:text="rambahadur123@gmail.com"
+        android:textSize="15sp"/>
+
+</LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            app:srcCompat="@drawable/user" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint="Ram Bahadur"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:hint="23"
+        android:textSize="15sp"
+        android:layout_marginLeft="80dp"/>
+
+    <EditText
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="MALE"
+        android:enabled="false"
+        android:textSize="15sp"
+        android:layout_marginLeft="80dp"/>
+
+    <EditText
+        android:id="@+id/dob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="19/5/1996"
+        android:enabled="false"
+        android:textSize="15sp"
+        android:layout_marginLeft="80dp"/>
+
+    <EditText
+        android:id="@+id/email2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="rambahadur123@gmail.com"
+        android:enabled="false"
+        android:textSize="15sp"
+        android:layout_marginLeft="80dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/lockimg"
+            android:layout_width="51dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="60dp"
+            app:srcCompat="@drawable/lock" />
+
+        <TextView
+            android:id="@+id/chgp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Change Password"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Medicine"
+        android:onClick="setmeds"/>
+
+
+</LinearLayout>

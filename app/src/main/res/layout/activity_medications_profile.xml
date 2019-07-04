@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".med_profile"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="110dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="100dp"
+        android:text="Medications"
+        android:textColor="#efefed"
+        android:textSize="40sp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:ems="10"
+        android:drawableStart="@drawable/m"
+        android:hint="Medicine name"
+
+        android:inputType="textPersonName" />
+
+
+    <EditText
+        android:layout_marginLeft="30dp"
+        android:id="@+id/editText8"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:drawableStart="@drawable/clock"/>
+
+    <EditText
+        android:layout_marginLeft="30dp"
+        android:id="@+id/editText3"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Dose"
+        android:inputType="textPersonName"
+        android:drawableStart="@drawable/doze"/>
+
+    <EditText
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/editText4"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Medicine"
+        android:inputType="textPersonName"
+        android:drawableStart="@drawable/m"
+        />
+
+    <EditText
+        android:layout_marginLeft="30dp"
+        android:id="@+id/editText9"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:drawableStart="@drawable/clock"
+         />
+
+    <EditText
+        android:layout_marginLeft="30dp"
+        android:id="@+id/editText6"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Dose"
+        android:inputType="textPersonName"
+        android:drawableStart="@drawable/doze"/>
+
+    <ImageButton
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="150dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/add_icon"
+        android:onClick="settingmed"/>
+
+    <Button
+        android:layout_width="270dp"
+        android:layout_height="64dp"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginTop="50dp"
+        android:text="Weekly report"
+        android:background="#00FFFFFF"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:onClick="report"/>
+
+
+
+
+
+</LinearLayout>
