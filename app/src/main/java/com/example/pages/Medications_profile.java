@@ -7,11 +7,14 @@ import android.view.View;
 
 public class Medications_profile extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_medications_profile);
     }
+
+
     public void settingmed(View view){
         Intent intent=new Intent(getApplicationContext(),setting_medprofile.class);
         startActivity(intent);

@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".user_new_account"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_margin="20dp">
 
     <ImageView
         android:layout_marginLeft="-30dp"
@@ -28,14 +29,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Name"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:layout_marginRight="60dp"/>
     <EditText
         android:id="@+id/enage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Age"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:layout_marginRight="60dp"/>
 
 
@@ -44,7 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Email"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:layout_marginRight="60dp"/>
 
     <EditText
@@ -52,18 +53,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:layout_marginRight="60dp"
-        android:inputType="textPassword"/>
+        android:inputType="textPassword"
+        />
 
     <EditText
         android:id="@+id/confirmp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Confrim Password"
-        android:textSize="25sp"
+        android:hint="Confirm Password"
+        android:textSize="20sp"
         android:layout_marginRight="60dp"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="20dp"
+        android:inputType="textPassword"
+        />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -101,7 +105,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="150dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:background="#80A4FF"
         android:text="Submit"
         android:onClick="Profile"/>

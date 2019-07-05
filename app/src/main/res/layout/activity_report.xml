@@ -14,15 +14,14 @@
         android:layout_marginLeft="60dp"
         android:text="Health Report"
         android:layout_marginTop="20dp"
-        android:textSize="50sp" />
+        android:textSize="50sp"
+        android:layout_marginBottom="70dp"/>
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/report"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:layout_marginTop="100dp"
-        app:srcCompat="@drawable/graph" />
-
+        android:layout_height="542dp"
+        app:srcCompat="@drawable/report" />
 
 
 </LinearLayout>
